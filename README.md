@@ -17,9 +17,9 @@ https://github.com/Shougo/ddc.vim
 ## Configuration
 
 ```vim
-call ddc#custom#patch_global('sourceOptions', {
-      \ '_': {
-      \   'converters': ['converter_truncate_abbr'],
-      \ }
+call ddc#custom#patch_global('sourceOptions', #{
+      \  _: #{
+      \    converters: ['converter_truncate_abbr'],
+      \  }
       \})
 ```

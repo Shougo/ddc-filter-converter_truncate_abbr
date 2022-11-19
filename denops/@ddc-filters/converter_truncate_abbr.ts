@@ -1,7 +1,7 @@
 import {
   BaseFilter,
   Item,
-} from "https://deno.land/x/ddc_vim@v2.2.0/types.ts";
+} from "https://deno.land/x/ddc_vim@v3.2.0/types.ts";
 
 type Params = {
   maxAbbrWidth: number;

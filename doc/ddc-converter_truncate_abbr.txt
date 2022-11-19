@@ -29,10 +29,10 @@ https://github.com/vim-denops/denops.vim
 ==============================================================================
 EXAMPLES				*ddc-converter_truncate_abbr-examples*
 >
-	call ddc#custom#patch_global('sourceOptions', {
-	      \ '_': {
-	      \   'converters': ['converter_truncate_abbr'],
-	      \ }
+	call ddc#custom#patch_global('sourceOptions', #{
+	      \   _: #{
+	      \     converters: ['converter_truncate_abbr'],
+	      \   }
 	      \ })
 <
 
