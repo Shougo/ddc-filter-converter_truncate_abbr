@@ -8,7 +8,7 @@ type Params = {
 };
 
 export class Filter extends BaseFilter<Params> {
-  filter(args: {
+  override filter(args: {
     filterParams: Params,
     completeStr: string,
     items: Item[],
@@ -25,7 +25,7 @@ export class Filter extends BaseFilter<Params> {
     return Promise.resolve(args.items);
   }
 
-  params(): Params {
+  override params(): Params {
     return {
       maxAbbrWidth: 80,
     };
