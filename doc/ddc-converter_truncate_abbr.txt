@@ -1,24 +1,24 @@
-*ddc-converter_truncate_abbr.txt* Truncate abbr converter for ddc.vim
+*ddc-filter-converter_truncate_abbr.txt* Truncate abbr converter for ddc.vim
 
 Author: Shougo <Shougo.Matsu at gmail.com>
 License: MIT license
 
-CONTENTS				*ddc-converter_truncate_abbr-contents*
+CONTENTS			*ddc-filter-converter_truncate_abbr-contents*
 
-Introduction		|ddc-converter_truncate_abbr-introduction|
-Install			|ddc-converter_truncate_abbr-install|
-Examples		|ddc-converter_truncate_abbr-examples|
-Params			|ddc-converter_truncate_abbr-params|
+Introduction		|ddc-filter-converter_truncate_abbr-introduction|
+Install			|ddc-filter-converter_truncate_abbr-install|
+Examples		|ddc-filter-converter_truncate_abbr-examples|
+Params			|ddc-filter-converter_truncate_abbr-params|
 
 
 ==============================================================================
-INTRODUCTION			*ddc-converter_truncate_abbr-introduction*
+INTRODUCTION		*ddc-filter-converter_truncate_abbr-introduction*
 
 This filter truncates abbr.
 
 
 ==============================================================================
-INSTALL					*ddc-converter_truncate_abbr-install*
+INSTALL				*ddc-filter-converter_truncate_abbr-install*
 
 Please install both "ddc.vim" and "denops.vim".
 
@@ -27,7 +27,7 @@ https://github.com/vim-denops/denops.vim
 
 
 ==============================================================================
-EXAMPLES				*ddc-converter_truncate_abbr-examples*
+EXAMPLES			*ddc-filter-converter_truncate_abbr-examples*
 >
 	call ddc#custom#patch_global('sourceOptions', #{
 	      \   _: #{
@@ -37,9 +37,9 @@ EXAMPLES				*ddc-converter_truncate_abbr-examples*
 <
 
 ==============================================================================
-PARAMS					*ddc-converter_truncate_abbr-params*
+PARAMS				*ddc-filter-converter_truncate_abbr-params*
 
-			    *ddc-converter_truncate_abbr-param-maxAbbrWidth*
+			*ddc-filter-converter_truncate_abbr-param-maxAbbrWidth*
 maxAbbrWidth	(number)
 		The maximum abbr width.
 

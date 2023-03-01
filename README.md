@@ -1,4 +1,4 @@
-# ddc-converter_truncate_abbr
+# ddc-filter-converter_truncate_abbr
 
 Truncate abbr converter for ddc.vim
 
