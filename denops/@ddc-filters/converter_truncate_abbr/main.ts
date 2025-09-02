@@ -1,5 +1,5 @@
-import { type Item } from "jsr:@shougo/ddc-vim@~7.0.0/types";
-import { BaseFilter } from "jsr:@shougo/ddc-vim@~7.0.0/filter";
+import type { Item } from "@shougo/ddc-vim/types";
+import { BaseFilter } from "@shougo/ddc-vim/filter";
 
 type Params = {
   maxAbbrWidth: number;
