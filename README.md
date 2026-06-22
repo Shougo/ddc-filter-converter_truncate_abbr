@@ -3,6 +3,7 @@
 Truncate abbr converter for ddc.vim
 
 This filter truncates abbr.
+If truncation is needed, it appends "..." within `maxAbbrWidth`.
 
 ## Required
 

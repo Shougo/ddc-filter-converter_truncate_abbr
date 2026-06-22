@@ -15,6 +15,7 @@ Params			|ddc-filter-converter_truncate_abbr-params|
 INTRODUCTION		*ddc-filter-converter_truncate_abbr-introduction*
 
 This filter truncates abbr.
+If truncation is needed, it appends "..." within |maxAbbrWidth|.
 
 
 ==============================================================================
@@ -42,6 +43,8 @@ PARAMS				*ddc-filter-converter_truncate_abbr-params*
 			*ddc-filter-converter_truncate_abbr-param-maxAbbrWidth*
 maxAbbrWidth	(number)
 		The maximum abbr width.
+		If truncation is needed, the resulting text (including "...")
+		will not exceed this value.
 
 		Default: 80
 

@@ -12,7 +12,19 @@ export class Filter extends BaseFilter<Params> {
     items: Item[];
   }): Promise<Item[]> {
     const truncate = (str: string, len: number): string => {
-      return str.length <= len ? str : (str.substring(0, len) + "...");
+      const maxLength = Math.max(0, Math.floor(len));
+      const chars = Array.from(str);
+      const ellipsis = "...";
+
+      if (chars.length <= maxLength) {
+        return str;
+      }
+
+      if (maxLength <= ellipsis.length) {
+        return ellipsis.slice(0, maxLength);
+      }
+
+      return chars.slice(0, maxLength - ellipsis.length).join("") + ellipsis;
     };
 
     for (const item of args.items) {
